@@ -8,8 +8,9 @@ function checkSpeed(speed) {
       return;
     }
   
-    //variable declaration
-    const points = Math.floor((speed - speedLimit) / kmDemeritPoint);
+   
+    const points = Math.floor((speed - speedLimit) / kmDemeritPoint); 
+    //math.floor rounds to the nearest integer
   
     if (points >= 12) {
       console.log("License suspended");
@@ -17,4 +18,4 @@ function checkSpeed(speed) {
       console.log("Points: " + points);
     }
   }
-  checkSpeed(80); //function checkSpeed is called
+  checkSpeed(80); //function called

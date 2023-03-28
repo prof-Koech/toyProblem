@@ -4,7 +4,7 @@ const TAX_RATES = [
     { maxAmount: 32333, rate: 0.25 },
     { maxAmount: Infinity, rate: 0.30 },
   ];
-  const NHIF_RATES = [150, 300, 400, 500, 600, 750, 850, 900, 950, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700];
+  const NHIF_RATES = [150, 300, 400, 500, 600, 750, 850, 900, 950, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700];//in an array
   const NSSF_RATE = 0.06;
   
   // Get inputs
@@ -74,7 +74,7 @@ const TAX_RATES = [
   // Calculate taxable income
   const taxableIncome = grossSalary - nhifDeduction - nssfDeduction - 2438;
   
-  // Calculate tax (payee)
+  // Calculate tax_payee
   let tax = 0;
   let remainingIncome = taxableIncome;
   for (const { maxAmount, rate } of TAX_RATES) {
@@ -87,7 +87,7 @@ const TAX_RATES = [
   // Calculate net salary
   const netSalary = grossSalary - nhifDeduction - nssfDeduction - tax;
   
-  // Output results
+  // gives final output
   console.log(`Gross Salary: ${grossSalary}`);
   console.log(`NHIF Deduction: ${nhifDeduction}`);
   console.log(`NSSF Deduction: ${nssfDeduction}`);
