@@ -14,7 +14,7 @@ I have used a switch case for implementation of this task.
  (if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.)
 
  ----procedure/steps----
-First define the speed limit and the number of kilometers per demerit point. )
+First define the speed limit and the number of kilometers per demerit point. 
 
 If the driver's speed is less than or equal to the speed limit, it outputs "Ok" and return from the function. 
 Otherwise, it calculates the number of demerit points by subtracting the speed limit from the driver's speed and dividing by the kilometers per demerit point. 
@@ -22,6 +22,7 @@ Otherwise, it calculates the number of demerit points by subtracting the speed l
 We apply the Math.floor function to round to the nearest integer. it checks if the driver has accumulated enough demerit points to have their license suspended. If so, it output "License suspended". 
 
 3  netSalaryCalculator.js
+----procedure/steps----
  prompts the user to enter their salary and benefits.
 
  It then calculates the payee using the KRA TAx Rates.
