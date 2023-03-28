@@ -7,14 +7,14 @@ const TAX_RATES = [
   const NHIF_RATES = [150, 300, 400, 500, 600, 750, 850, 900, 950, 1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700];//in an array
   const NSSF_RATE = 0.06;
   
-  // Get inputs
+  // accept user inputs
   const basicSalary = parseFloat(prompt("Enter your basic salary : "));
   const benefits = parseFloat(prompt("Enter your benefits : "));
   
-  // Calculate gross salary
+  // gross salary
   const grossSalary = basicSalary + benefits;
   
-  // Calculate NHIF deductions
+  // NHIF deductions
   let nhifDeduction;
   if (grossSalary <= 5999) {
     nhifDeduction = 150;
