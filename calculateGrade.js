@@ -1,4 +1,5 @@
 
+const prompt = require("prompt-sync")();
 
 function studentGrade1(){
   let marks = prompt("Enter a student Grade : ");
